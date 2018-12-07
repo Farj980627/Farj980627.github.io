@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <Script src="https://aframe.io/releases/0.8.0/aframe.min.js"></Script>
+    </head>
+
+    <body>
+        <a-scene>
+                <a-cylinder id="ground" src="img/ce.jpg" radius="20" height="0"></a-cylinder>
+
+
+            <a-assets>
+                <a-asset-item  id="object" src="Modelo/house.obj"></a-asset-item>
+                <a-asset-item id="material" src="Modelo/house.mtl"></a-asset-item>
+            </a-assets>
+
+            <a-assets>        
+                    <a-asset-item  id="object2" src="Modelo/arbolg.obj"></a-asset-item>
+                    <a-asset-item id="material2" src="Modelo/arbolg.mtl"></a-asset-item>
+            </a-assets>
+
+            <a-assets>        
+                    <a-asset-item  id="object3" src="Modelo/arbolm.obj"></a-asset-item>
+                    <a-asset-item id="material3" src="Modelo/arbolm.mtl"></a-asset-item>
+            </a-assets>
+
+            <a-assets>        
+                    <a-asset-item  id="object4" src="Modelo/arbolc.obj"></a-asset-item>
+                    <a-asset-item id="material4" src="Modelo/arbolc.mtl"></a-asset-item>
+            </a-assets>
+
+            <a-assets>        
+                    <a-asset-item  id="object5" src="Modelo/auto.obj"></a-asset-item>
+                    <a-asset-item id="material5" src="Modelo/auto.mtl"></a-asset-item>
+            </a-assets>
+
+           
+        
+    
+
+            
+         
+            <a-obj-model  position="0 0 0" src="#object" mtl="#material"></a-obj-model>
+            <a-obj-model  position="17 0 0" scale="1.5 1.5 1.5" src="#object2" mtl="#material2"></a-obj-model>
+            <a-obj-model  position="17 0 7" scale="1.5 1.5 1.5" src="#object3" mtl="#material3"></a-obj-model>
+            <a-obj-model  position="17 0 13" scale="1.5 1.5 1.5" src="#object4" mtl="#material4"></a-obj-model>
+            <a-obj-model  position="0 .5 12" scale="" src="#object5" mtl="#material5"></a-obj-model>
+         
+            
+            
+            
+            
+        
+            <a-light  type = "ambient"  color = "#ffffff" > </a-light >
+
+            <a-camera position="0 3 17">
+              <a-cursor color="#FF0000">
+            </a-camera>
+                        
+
+        </a-scene> 
+    </body>
+
+</html>
